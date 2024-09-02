@@ -26,7 +26,7 @@ import { Toaster } from 'react-hot-toast'
 let routers = createBrowserRouter([
   {
     path: '', element: <Layout />, children: [
-      { index:true, element: <ProtectedRoute><Home /></ProtectedRoute> },
+      { path: 'Fresh-Cart?/', element: <ProtectedRoute><Home /></ProtectedRoute> },
       { path: 'products', element: <ProtectedRoute><Products /></ProtectedRoute> },
       { path: 'cart', element: <ProtectedRoute><Cart /></ProtectedRoute> },
       { path: 'productdetails/:id', element: <ProtectedRoute><ProductDetails /></ProtectedRoute> },
