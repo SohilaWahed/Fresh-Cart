@@ -11,6 +11,6 @@ export default function ProtectedRoute({children}) {
   if (localStorage.getItem('userToken')) {
     return children
   }else{
-    return <Navigate to={'/login'}></Navigate>
+    return <Navigate to={'Fresh-Cart/login'}></Navigate>
   }
 }
